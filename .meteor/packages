@@ -7,5 +7,7 @@
 meteor-platform
 autopublish
 insecure
+twbs:bootstrap-noglyph
 msavin:mongol
+fortawesome:fontawesome
 accounts-ui
