@@ -37,9 +37,9 @@
         <ul class="nav navbar-nav navbar-right">
           {{#if currentUser}}
             <li><img src="{{currentUser.profile.image}}"></li>
-            <li class="navbar-text">{{currentUser.profile.firstName}}</li>
-            <li><i class="fa fa-bell"></i></li>
-            <li><i class="fa fa-cog"></i></li>
+            <li class="navbar-text">{{currentUser.profile.name}}</li>
+            <li><a><i class="fa fa-bell"></i></a></li>
+            <li><a><i class="fa fa-cog"></i></a></li>
           {{else}}
             {{> loginButtons align="right"}}
           {{/if}}
