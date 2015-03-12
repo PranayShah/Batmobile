@@ -1,5 +1,6 @@
 accounts-base@1.1.3
 accounts-facebook@1.0.3
+accounts-google@1.0.3
 accounts-oauth@1.1.3
 accounts-password@1.0.6
 accounts-twitter@1.0.3
@@ -7,14 +8,14 @@ accounts-ui@1.1.4
 accounts-ui-unstyled@1.1.6
 aldeed:autoform@4.2.2
 aldeed:collection2@2.3.2
-aldeed:simple-schema@1.3.1
+aldeed:simple-schema@1.3.0
 anti:i18n@0.4.3
 application-configuration@1.0.4
-aslagle:reactive-table@0.6.15
+aslagle:reactive-table@0.6.14
 autoupdate@1.1.5
 backbone@1.0.0
 base64@1.0.2
-bengott:avatar@0.7.5
+bengott:avatar@0.7.3
 binary-heap@1.0.2
 blaze@2.0.4
 blaze-tools@1.0.2
@@ -37,6 +38,7 @@ fastclick@1.0.2
 follower-livedata@1.0.3
 fourseven:scss@1.0.0
 geojson-utils@1.0.2
+google@1.1.4
 handlebars@1.0.2
 html-tools@1.0.3
 htmljs@1.0.3
@@ -82,7 +84,6 @@ mongo@1.0.11
 mongo-livedata@1.0.7
 mrt:cookies@0.3.0
 mrt:jquery-hotkeys@0.0.1
-mrt:moment@2.8.1
 npm-bcrypt@0.7.7
 npm-container@1.0.0
 oauth@1.1.3
@@ -90,6 +91,8 @@ oauth1@1.1.3
 oauth2@1.1.2
 observe-sequence@1.0.4
 ordered-dict@1.0.2
+pauli:accounts-linkedin@1.1.1
+pauli:linkedin@1.1.1
 percolatestudio:synced-cron@1.1.0
 rajit:bootstrap3-datepicker@1.4.1
 random@1.0.2
@@ -125,7 +128,6 @@ telescope-lib@0.2.9
 telescope-module-share@0.0.0
 telescope-newsletter@0.1.0
 telescope-notifications@0.1.0
-telescope-post-by-feed@0.0.1
 telescope-releases@0.1.0
 telescope-rss@0.0.0
 telescope-search@0.0.0
@@ -145,5 +147,6 @@ underscore@1.0.2
 url@1.0.3
 useraccounts:core@1.8.1
 useraccounts:unstyled@1.8.1
+users@0.1.0
 webapp@1.1.6
 webapp-hashing@1.0.2
