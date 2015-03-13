@@ -1,7 +1,7 @@
 Package.describe({
   summary: 'Changes user account fields to reflect our use case',
   version: '0.1.0',
-  name: 'users'
+  name: 'batmobile-users'
 });
 
 Package.onUse(function (api) {
@@ -48,6 +48,7 @@ Package.onUse(function (api) {
 
   // both
 
+  
   api.add_files([
     'lib/custom_fields.js',
     'lib/hooks.js',
@@ -82,8 +83,5 @@ Package.onUse(function (api) {
 
   // -------------------------------- 3. Variables to export --------------------------------
 
-  api.export([
-    'myFunction'
-  ]);
 
 });
