@@ -1,3 +1,17 @@
 <template name="userOrOrganization">
   <p> <input type="checkbox" id="userOrOrganization" checked> </p>
+  {{> atForm}}
+</template>
+
+<template name="questionForm">
+<div class="grid grid-module">
+  {{# autoForm collection="Posts" id="submitPostForm" label-class="control-label" input-col-class="controls" type="method" meteormethod="submitPost"}}
+	  {{> afFormGroup label=false name='title' placeholder="Get asking. What is your question?" type="textarea" row=5}}
+	  <button type="submit" class="btn btn-primary">Post the question</button>
+	{{/autoForm}}
+</div>
+<div class="grid grid-module">
+	<p>Or</p>
+	<a href="/submit">Ask a detailed question</a>
+</div>
 </template>

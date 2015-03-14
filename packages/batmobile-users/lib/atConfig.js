@@ -11,7 +11,7 @@ AccountsTemplates.configure({
     showReCaptcha: true
 });
 AccountsTemplates.configureRoute('signUp', {
-  path: '/register',
+  path: '/sgup',
   template: 'userOrOrganization'
 });
 // AccountsTemplates.removeField('email');

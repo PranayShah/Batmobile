@@ -82,6 +82,10 @@ Package.onUse(function (api) {
   ], ['client', 'server']);
 
   // -------------------------------- 3. Variables to export --------------------------------
-
+  api.export ([
+    'primaryNav',
+    'secondaryNav',
+    'heroModules'
+    ]);
 
 });

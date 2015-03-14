@@ -3,7 +3,7 @@
 // ------------------------------------------------------------------------------------------- //
 
 // add a subscription to be preloaded before the rest of the app
-preloadSubscriptions.push('customPublication');
+// preloadSubscriptions.push('customPublication');
 
 // ------------------------------------------------------------------------------------------- //
 // ------------------------------------------- Nav ------------------------------------------- //
@@ -15,12 +15,19 @@ primaryNav.push({
   order: 99
 });
 
+primaryNav = _.reject(primaryNav, function (item) {
+    return item.template === 'viewsMenu';
+});
+
 // add templates to the secondary nav bar
 secondaryNav.push({
   template: 'customNav',
   order: 99
 });
 
+secondaryNav = _.reject(secondaryNav, function (item) {
+    return item.template === 'submitButton';
+});
 // add items to the view menu
 viewsMenu.push({
   route: 'customRoute',
@@ -41,7 +48,7 @@ adminMenu.push({
 
 // add templates to the hero zone (before posts list)
 heroModules.push({
-  template: 'customHero',
+  template: 'questionForm',
   order: 99
 });
   
@@ -61,10 +68,15 @@ postModules.push({
   order: 99
 });
 
+
 // add templates to the post heading zone
 postHeading.push({
   template: 'customHeading',
   order: 99
+});
+
+postModules = _.reject(postModules, function (item) {
+    return item.template === 'postDomain';
 });
 
 // add templates to the post meta zone
