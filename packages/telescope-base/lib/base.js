@@ -253,7 +253,7 @@ postSubmitClientCallbacks = [];
 postSubmitMethodCallbacks = [];
 postAfterSubmitMethodCallbacks = []; // runs on server only in a timeout
 
-postEditClientCallbacks = []; // loops over post object
+postEditClientCallbacks = []; // loops over modifier object
 postEditMethodCallbacks = []; // loops over modifier (i.e. "{$set: {foo: bar}}") object
 postAfterEditMethodCallbacks = []; // loops over modifier object
 
@@ -346,5 +346,9 @@ preloadSubscriptions = [];
 
 // ------------------------------- Vote Power -------------------------------- //
 
-// The equation to determine Vote Power
-votePowerEq = null;
+// The equation to determine voting power
+// Default to returning 1 for everybody
+
+getVotePower = function (user) {
+  return 1;
+};
