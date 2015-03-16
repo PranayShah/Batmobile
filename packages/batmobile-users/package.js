@@ -17,8 +17,9 @@ Package.onUse(function (api) {
     'telescope-lib',              // useful functions
     'telescope-i18n',             // internationalization wrapper
     'fourseven:scss',
-    'useraccounts:unstyled@1.4.0'              // SCSS compilation package
-  ]);
+    'useraccounts:unstyled@1.4.0' ,
+    'iron:router'             // SCSS compilation package
+  ], ['client', 'server']);
 
   // client
 
@@ -26,7 +27,8 @@ Package.onUse(function (api) {
     'jquery',                     // useful for DOM interactions
     'underscore',                 // JavaScript swiss army knife library
     'templating',
-    'session'                  // required for client-side templates
+    'session',
+    'tracker'                  // required for client-side templates
   ], ['client']);
   api.imply ([
     'pauli:accounts-linkedin',

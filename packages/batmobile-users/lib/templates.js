@@ -1,3 +1,3 @@
 // Override "postTitle" template
 
-templates["postTitle"] = "customPostTitle";
+templates["posts_list"] = "posts_list_mod";

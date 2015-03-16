@@ -47,10 +47,26 @@ adminMenu.push({
 // ------------------------------------------------------------------------------------------- //
 
 // add templates to the hero zone (before posts list)
-heroModules.push({
-  template: 'questionForm',
-  order: 99
-});
+
+/*if (Meteor.isClient)
+{ 
+  Tracker.autorun (function ()
+  {
+    if (Iron && Iron.Location && Iron.Location.get().path ==='/')
+    { 
+      heroModules.push({
+        template: 'questionForm',
+        order: 99
+      });
+    }
+    else
+    { 
+      heroModules = _.reject(heroModules, function (item) {
+          return item.template === 'questionForm';
+      });
+    }
+  });
+}*/
   
 // add templates to the footer (after posts list)
 footerModules.push({
