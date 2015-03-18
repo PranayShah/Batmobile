@@ -17,8 +17,7 @@ Package.onUse(function (api) {
     'telescope-lib',              // useful functions
     'telescope-i18n',             // internationalization wrapper
     'fourseven:scss',
-    'useraccounts:unstyled@1.4.0' ,
-    'iron:router'             // SCSS compilation package
+    'useraccounts:unstyled@1.4.0'           // SCSS compilation package
   ], ['client', 'server']);
 
   // client
@@ -64,10 +63,13 @@ Package.onUse(function (api) {
   // client
 
   api.add_files([
-    'lib/client/templates/custom_template.html',
-    'lib/client/templates/custom_template.js',
-    'lib/client/templates/customPostTitle.html',
-    'lib/client/stylesheets/custom.scss'
+    'lib/client/templates/usersLogin.html',
+    'lib/client/templates/usersLogin.js',
+    'lib/client/templates/follow.html',
+    'lib/client/templates/follow.js',
+    'lib/client/templates/home.html',
+    'lib/client/stylesheets/custom.scss',
+    'lib/client/subscriptions.js'
   ], ['client']);
 
   // server

@@ -1,5 +1,5 @@
 AccountsTemplates.configure({
-	sendVerificationEmail: true,
+	// sendVerificationEmail: true,
 	showForgotPasswordLink: true,
 	privacyUrl: 'privacy',
 	termsUrl: 'tos',
@@ -8,7 +8,7 @@ AccountsTemplates.configure({
         theme: "light",
         data_type: "image"
     },
-    showReCaptcha: true
+    showReCaptcha: false
 });
 AccountsTemplates.configureRoute('signUp', {
   path: '/sgup',
