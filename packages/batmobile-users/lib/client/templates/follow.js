@@ -19,6 +19,10 @@ Template.followButton.events ({
   {
     var followingUserObject = {_id: this._id, name: this.profile.name };
     var loggedInUser = Meteor.user();
+    if(!loggedInUser){
+      Router.go('atSignIn');
+      flashMessage(i18n.t("please_log_in_first"), "info");
+    }
     Meteor.call ('addFollowing', loggedInUser, followingUserObject);
 
   }

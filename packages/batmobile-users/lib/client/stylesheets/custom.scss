@@ -1,6 +1,10 @@
 .pos {
 	background:#a3d06d;
+	text-align: center;
 	&:link, &:hover, &:active, &:visited{
 	  color:white;
 	}
+}
+.detailed {
+	text-align: center;
 }

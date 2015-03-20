@@ -69,7 +69,9 @@ Package.onUse(function (api) {
     'lib/client/templates/follow.js',
     'lib/client/templates/home.html',
     'lib/client/stylesheets/custom.scss',
-    'lib/client/subscriptions.js'
+    'lib/client/subscriptions.js',
+    'lib/client/templates/singleLevelComments.html',
+    'lib/client/templates/singleLevelComments.js'
   ], ['client']);
 
   // server
