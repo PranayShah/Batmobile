@@ -26,3 +26,9 @@ Meteor.methods ({
 		}
 	}
 });
+
+Meteor.startup(function () {
+  Categories.allow({
+    insert: function (userId, doc) {return !!userId;}
+  });
+});
