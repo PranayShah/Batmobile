@@ -91,7 +91,8 @@ Package.onUse(function (api) {
   api.export ([
     'primaryNav',
     'secondaryNav',
-    'heroModules'
+    'heroModules',
+    'addToCommentsSchema'
     ]);
 
 });
