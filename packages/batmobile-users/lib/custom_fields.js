@@ -16,4 +16,12 @@ var isCommentToAnswer = {
     defaultValue: true
   }
 }
-addToCommentsSchema.push(isAnswer, isCommentToAnswer);
+var isAcceptedAnswer = {
+  propertyName: 'isAcceptedAnswer',
+  propertySchema: {
+    type: Boolean,                           // property type
+    optional: true,                         // make this property optional
+    defaultValue: true
+  }
+}
+addToCommentsSchema.push(isAnswer, isCommentToAnswer, isAcceptedAnswer);

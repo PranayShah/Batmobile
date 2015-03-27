@@ -71,7 +71,9 @@ Package.onUse(function (api) {
     'lib/client/stylesheets/custom.scss',
     'lib/client/subscriptions.js',
     'lib/client/templates/singleLevelComments.html',
-    'lib/client/templates/singleLevelComments.js'
+    'lib/client/templates/singleLevelComments.js',
+    'lib/client/templates/comment_form_mod.html',
+    'lib/client/templates/comment_form_mod.js'
   ], ['client']);
 
   // server
