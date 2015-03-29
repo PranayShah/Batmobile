@@ -68,12 +68,14 @@ Package.onUse(function (api) {
     'lib/client/templates/follow.html',
     'lib/client/templates/follow.js',
     'lib/client/templates/home.html',
-    'lib/client/stylesheets/custom.scss',
-    'lib/client/subscriptions.js',
-    'lib/client/templates/singleLevelComments.html',
-    'lib/client/templates/singleLevelComments.js',
+    'lib/client/templates/post_page_mod.html',
+    'lib/client/templates/post_page_mod.js',
+    'lib/client/templates/comment_item_mod.html',
+    'lib/client/templates/comment_item_mod.js',
     'lib/client/templates/comment_form_mod.html',
-    'lib/client/templates/comment_form_mod.js'
+    'lib/client/templates/comment_form_mod.js',
+    'lib/client/stylesheets/custom.scss',
+    'lib/client/subscriptions.js'
   ], ['client']);
 
   // server
