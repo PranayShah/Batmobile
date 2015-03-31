@@ -4,8 +4,7 @@ var isAnswer = {
   propertyName: 'isAnswer',
   propertySchema: {
     type: Boolean,                           // property type
-    optional: false,                         // make this property optional
-    defaultValue: true
+    optional: true,                         // make this property optional
   }
 }
 var isCommentToAnswer = {
@@ -13,7 +12,6 @@ var isCommentToAnswer = {
   propertySchema: {
     type: Boolean,                           // property type
     optional: true,                         // make this property optional
-    defaultValue: true
   }
 }
 var isAcceptedAnswer = {
