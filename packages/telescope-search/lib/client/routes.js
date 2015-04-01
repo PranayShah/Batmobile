@@ -2,6 +2,13 @@ Meteor.startup(function () {
 
   PostsSearchController = PostsListController.extend({
     view: 'search',
+    showViewsNav: false,
+    getTitle: function() {
+      return i18n.t("Search") + ' - ' + getSetting('title', "Telescope");
+    },
+    getDescription: function() {
+      return getSetting('description');
+    },
     onBeforeAction: function() {
       var query = this.params.query;
       if ('q' in query) {
@@ -32,6 +39,7 @@ Meteor.startup(function () {
   // Search Logs
 
   Router.route('/logs/:limit?', {
+    controller: AdminController,
     name: 'searchLogs',
     waitOn: function () {
       var limit = this.params.limit || 100;

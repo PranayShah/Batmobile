@@ -23,12 +23,13 @@ Package.onUse(function(api) {
 
   api.use([
     'iron:router',
-    'templating'
+    'templating',
+    'telescope-messages'
   ], 'client');
 
   api.use([
     'http',
-    'mrt:moment',
+    'momentjs:moment',
     'percolatestudio:synced-cron'
   ], 'server');
 
