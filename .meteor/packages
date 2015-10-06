@@ -5,6 +5,8 @@
 # but you can also edit it by hand.
 
 meteor-platform
+reactive-var
+http
 accounts-password
 accounts-facebook
 accounts-google
@@ -16,9 +18,18 @@ service-configuration
 #atmosphere
 
 iron:router
+twbs:bootstrap-noglyph
 msavin:mongol
+fortawesome:fontawesome
 pauli:accounts-linkedin
+
 aldeed:delete-button
 aldeed:autoform
 aldeed:collection2
 aldeed:simple-schema
+
+meteorhacks:fast-render
+meteorhacks:subs-manager
+meteorhacks:npm
+
+useraccounts:bootstrap

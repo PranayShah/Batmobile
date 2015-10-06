@@ -1,6 +1,10 @@
 var Schema = {};
+<<<<<<< HEAD
 
 Schema.User = new SimpleSchema({
+=======
+var userSchemaObject = { 
+>>>>>>> origin/devel
   _id: {
     type: String,
     optional: true
@@ -42,7 +46,17 @@ Schema.User = new SimpleSchema({
     optional: true,
     blackbox: true
   }
+<<<<<<< HEAD
 });
+=======
+};
+
+
+_.each(addToUserSchema, function(item){
+  userSchemaObject[item.propertyName] = item.propertySchema;
+});
+Schema.User = new SimpleSchema(userSchemaObject);
+>>>>>>> origin/devel
 
 // Meteor.users.attachSchema(Schema.User);
 
@@ -50,7 +64,12 @@ Meteor.users.deny({
   update: function(userId, post, fieldNames) {
     if(isAdminById(userId))
       return false;
+<<<<<<< HEAD
     return (_.without(fieldNames, 'profile', 'username').length > 0);
+=======
+    // deny the update if it contains something other than the profile field
+    return (_.without(fieldNames, 'profile', 'username', 'slug').length > 0);
+>>>>>>> origin/devel
   }
 });
 
